@@ -1,0 +1,57 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background: linear-gradient(45deg, #2980B9, #6DD5FA, #FFFFFF);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.paw {
+    color: #FF8000;
+}
+.block {
+    color: #008000;
+}
+.black {
+    color: #000000;
+}
+.bur {
+    color: #000000;
+}
+#bur {
+    background-color: #ff0000; /* Синий цвет */
+    color: #ffffff; /* Белый цвет текста */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10;
+    margin-bottom: 10px; /* Расстояние между кнопками по вертикали (если flex не используется) */
+}
+#bur:hover {
+    background-color: #ff000070; /* Более тёмный синий при наведении */
+}
+.but {
+    background-color: #FF8000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.but:hover {
+    background-color: #ff800082; /* Более тёмный синий при наведении */
+}
+.reg {
+    color: #ff0000;
+}
