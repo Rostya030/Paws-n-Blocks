@@ -47,9 +47,6 @@ body {
     margin: 10;
     margin-bottom: 10px; /* Расстояние между кнопками по вертикали (если flex не используется) */
 }
-#bur:hover {
-    background-color: #ff000070; /* Более тёмный синий при наведении */
-}
 .but {
     background-color: #FF8000;
     padding: 5px 10px;
