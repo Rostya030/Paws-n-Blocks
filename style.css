@@ -4,17 +4,6 @@ body {
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
 }
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
 #recipes {
     height: 100%;
 }
@@ -48,7 +37,7 @@ body {
     color: #000000;
 }
 #bur {
-    background-color: #ff0000; /* Синий цвет */
+    background-color: #b0b0ff; /* Синий цвет */
     color: #ffffff; /* Белый цвет текста */
     border: none;
     padding: 5px 10px;
@@ -66,11 +55,11 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
 }
-.but:hover {
-    background-color: #ff800082; /* Более тёмный синий при наведении */
+#bur:hover {
+    background-color: #b0b0ff70; /* Более тёмный синий при наведении */
 }
 .reg {
-    color: #ff0000;
+    color: #0000ff;
 }
 
 /* Основной контейнер для всех элементов .recipe-item */  
@@ -135,7 +124,120 @@ body {
     width: 30px;  
     height: 30px;  
 }
+@media (max-width: 100px) {  
+    .square {  
+        width: 20px;  
+        height: 20px;  
+        font-size: 0.7rem;  
+    }  
+}
+@media (max-width: 150px) {  
+    .square {  
+        width: 20px;  
+        height: 20px;  
+        font-size: 0.7rem;  
+    }  
+}
 @media (max-width: 200px) {  
+    .square {  
+        width: 20px;  
+        height: 20px;  
+        font-size: 0.7rem;  
+    }  
+}
+@media (max-width: 250px) {  
+    .square {  
+        width: 20px;  
+        height: 20px;  
+        font-size: 0.7rem;  
+    }  
+}
+@media (max-width: 300px) {  
+    .square {  
+        width: 20px;  
+        height: 20px;  
+        font-size: 0.7rem;  
+    }  
+}
+@media (max-width: 350px) {  
+    .square {  
+        width: 20px;  
+        height: 20px;  
+        font-size: 0.7rem;  
+    }  
+}
+@media (max-width: 400px) {  
+    .square {  
+        width: 20px;  
+        height: 20px;  
+        font-size: 0.7rem;  
+    }  
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background: linear-gradient(45deg, #969696, #dfdfdf, #FFFFFF);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Общие стили для всех размеров */  
+html, body {  
+    height: 100%;  
+}  
+
+body {  
+    margin: 0;  
+    background: linear-gradient(45deg, #2980B9, #6DD5FA, #FFFFFF);  
+    background-size: 400% 400%;  
+    animation: gradient 5s ease infinite;  
+}  
+
+/* Основной контейнер для всех элементов .recipe-item */  
+.recipe-container {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: flex-start;  
+    margin: 5;  
+    padding: 5;  
+}  
+
+/* Установим базовые стили для .recipe-item */  
+.recipe-item {  
+    position: relative;  
+    margin: 10px;  
+    padding: 15px 15px 15px 50px;  
+    background-color: #ffffff;  
+    border: 2px solid #3498db;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    width: calc(25% - 20px);  
+    box-sizing: border-box;  
+}  
+
+/* Медиа-запросы для адаптации под разные размеры экранов */  
+@media (max-width: 768px) { /* Планшеты */  
+    .recipe-item {  
+        width: calc(50% - 20px); /* Два элемента в ряд */  
+    }  
+}  
+
+@media (max-width: 480px) { /* Мобильные устройства */  
+    .recipe-item {  
+        width: calc(100% - 20px); /* Один элемент в ряд */  
+    }  
     .square {  
         width: 20px;  
         height: 20px;  
