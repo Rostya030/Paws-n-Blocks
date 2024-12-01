@@ -20,7 +20,7 @@
 }
 
 body {
-    margin: 130px 150px 0px 100px; 
+    margin: 70px 150px 0px 100px; 
     flex: center;
 }
 
@@ -36,8 +36,8 @@ body {
 } 
 
 html {
-    height: 440px;
-    width: 1000px;
+    height: 395px;
+    width: 700px;
     background: linear-gradient(149deg, rgb(24, 51, 187) 0%, rgb(57, 100, 175) 42%, rgb(187, 184, 24) 72%, rgb(250, 163, 0) 100%);
     animation: gradient 10s infinite linear;
     background-size: 2000px;
