@@ -15,83 +15,6 @@
     --color-yellow- :#ffea00 ;
 }
 
-.h2333 {
-    color: var(--color-blue-);
-}
-
-body {
-    margin: 130px 150px 0px 100px; 
-    flex: center;
-}
-
-#recipes {
-    height: 100%;
-}
-
-#recipes {
-    margin: 0;
-    background: linear-gradient(45deg, #2980B9, #6DD5FA, #FFFFFF);
-    background-size: 40000% 40000%;
-    animation: gradient 5s ease infinite;
-} 
-
-html {
-    height: 440px;
-    width: 1000px;
-    background: linear-gradient(149deg, rgb(24, 51, 187) 0%, rgb(57, 100, 175) 42%, rgb(187, 184, 24) 72%, rgb(250, 163, 0) 100%);
-    animation: gradient 10s infinite linear;
-    background-size: 2000px;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 80% 0%;
-    }
-    50% {
-        background-position: 20% 100%;
-    }
-    100% {
-        background-position: 80% 0%;
-    }
-}
-
-.paw {
-    color: var(--color-orange-);
-}
-
-.block {
-    color: var(--color-green-);
-}
-
-.black {
-    color: var(--color-dark-);
-}
-
-#bur {
-    color: var(--color-white-);
-}
-
-.bur {
-    background-color: var(--color-orange-); /* Синий цвет */
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 5px 5px 5px 5px;
-    font-family: "Roboto";
-}
-
-#bur:hover {
-    color: var(--color-yellow-);
-}
-
-.reg {
-    color: var(--color-blue-);
-    font-family: "Roboto";
-}
-.h2333 {
-    font-family: "Roboto";
-}
-
 /* Основной контейнер для всех элементов .recipe-item */  
 .recipe-container {  
     display: flex; /* Используем flexbox для упорядочивания элементов */  
@@ -248,18 +171,78 @@ html {
         height: 20px;  
         font-size: 0.7rem;  
     }
-    /* html {background-image: url(./image.kryakva/image.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-size: 100% 100%;
-    }   */
 }
 
-  a {  
-    text-decoration: none;  
-} 
+.colored-text {  
+    font-size: 30px; /* Размер текста */  
+    position: relative; /* Относительное позиционирование */  
+}  
+
+.colored-text::before {  
+    content: "Paws"; /* Оранжевая часть */  
+    color: var(--color-orange-); /* Оранжевый цвет */  
+}  
+
+.colored-text::after {  
+    content: "Blocks"; /* Зеленая часть */  
+    color: var(--color-green-); /* Зеленый цвет */  
+}  
+
+.colored-text .black {  
+    color: var(--color-dark-); /* Черный цвет для 'n' */  
+}
+.colored-text {
+    color: var(--color-dark-);
+    text-decoration: none;
+    font-family: Roboto;
+}
+.p2t2 {
+    font-size: 20px;
+    font-family: "Roboto";
+}
+
+.colored-tex {  
+    font-size: 20px; /* Размер текста */  
+    position: relative; /* Относительное позиционирование */  
+}  
+
+.colored-tex::before {  
+    content: "Paws"; /* Оранжевая часть */  
+    color:  var(--color-orange-) /* Оранжевый цвет */  
+}  
+
+.colored-tex::after {  
+    content: "Blocks"; /* Зеленая часть */  
+    color: var(--color-green-); /* Зеленый цвет */  
+}  
+
+.colored-tex .black {  
+    color: var(--color-dark-); /* Черный цвет для 'n' */  
+}
+.colored-tex {
+    color: var(--color-dark-);
+    text-decoration: none;
+    font-family: Roboto;
+}
+
+html {
+    height: 1790px;
+    width: 1000px;
+    background: linear-gradient(149deg, rgb(24, 51, 187) 0%, rgb(57, 100, 175) 42%, rgb(187, 184, 24) 72%, rgb(250, 163, 0) 100%);
+    animation: gradient 5s infinite linear;
+    background-size: 5000px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
+
+
