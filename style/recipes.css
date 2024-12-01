@@ -225,12 +225,13 @@
     font-family: Roboto;
 }
 
-html {
+body {
     height: 1790px;
     width: 1000px;
     background: linear-gradient(149deg, rgb(24, 51, 187) 0%, rgb(57, 100, 175) 42%, rgb(187, 184, 24) 72%, rgb(250, 163, 0) 100%);
     animation: gradient 5s infinite linear;
     background-size: 5000px;
+    margin: 100px 100px 100px 100px;
 }
 
 @keyframes gradient {

@@ -24,23 +24,12 @@ body {
     flex: center;
 }
 
-#recipes {
-    height: 100%;
-}
-
-#recipes {
-    margin: 0;
-    background: linear-gradient(45deg, #2980B9, #6DD5FA, #FFFFFF);
-    background-size: 40000% 40000%;
-    animation: gradient 5s ease infinite;
-} 
-
 html {
-    height: 395px;
-    width: 700px;
+    height: 593px;
+    width: 1000px;
     background: linear-gradient(149deg, rgb(24, 51, 187) 0%, rgb(57, 100, 175) 42%, rgb(187, 184, 24) 72%, rgb(250, 163, 0) 100%);
-    animation: gradient 10s infinite linear;
-    background-size: 2000px;
+    animation: gradient 5s infinite linear;
+    background-size: 1000%;
 }
 
 @keyframes gradient {
