@@ -1,65 +1,95 @@
-html, body {
-    height: 100%;
+:root {
+    --color-blueeee- :#6DD5FA ;
+    --color-blueee- :#2980B9 ;
+    --color-bluee- :#3498db ;
+    --color-blue- :#0000ff ;
+    --color-white- :#FFFFFF ;
+    --color-grey- :#969696 ;
+    --color-greyy- :#6e6e6e ;
+    --color-orange- :#ff8000 ;
+    --color-oorange-:#974b00 ;
+    --color-green- :#008000 ;
+    --color-dark- :#000000 ;
+    --color-violetw- :#b0b0ff ;
+    --color-violetd- :#6d6d9e ;
+    --color-yellow- :#ffea00 ;
 }
+
+.h2333 {
+    color: var(--color-blue-);
+}
+
 body {
-    margin: 0;
-    background: linear-gradient(45deg, #969696, #dfdfdf, #FFFFFF);
-    background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+    margin: 130px 150px 0px 100px; 
+    flex: center;
 }
+
 #recipes {
     height: 100%;
 }
+
 #recipes {
     margin: 0;
     background: linear-gradient(45deg, #2980B9, #6DD5FA, #FFFFFF);
     background-size: 40000% 40000%;
     animation: gradient 5s ease infinite;
+} 
+
+html {
+    height: 440px;
+    width: 1000px;
+    background: linear-gradient(149deg, rgb(24, 51, 187) 0%, rgb(57, 100, 175) 42%, rgb(187, 184, 24) 72%, rgb(250, 163, 0) 100%);
+    animation: gradient 10s infinite linear;
+    background-size: 2000px;
 }
+
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 80% 0%;
     }
     50% {
-        background-position: 100% 50%;
+        background-position: 20% 100%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 80% 0%;
     }
 }
+
 .paw {
-    color: #FF8000;
+    color: var(--color-orange-);
 }
+
 .block {
-    color: #008000;
+    color: var(--color-green-);
 }
+
 .black {
-    color: #000000;
+    color: var(--color-dark-);
 }
-.bur {
-    color: #000000;
-}
+
 #bur {
-    background-color: #b0b0ff; /* Синий цвет */
-    color: #ffffff; /* Белый цвет текста */
+    color: var(--color-white-);
+}
+
+.bur {
+    background-color: var(--color-orange-); /* Синий цвет */
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 10;
-    margin-bottom: 10px; /* Расстояние между кнопками по вертикали (если flex не используется) */
+    margin: 5px 5px 5px 5px;
+    font-family: "Roboto";
 }
-.but {
-    background-color: #FF8000;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
+
 #bur:hover {
-    background-color: #b0b0ff70; /* Более тёмный синий при наведении */
+    color: var(--color-yellow-);
 }
+
 .reg {
-    color: #0000ff;
+    color: var(--color-blue-);
+    font-family: "Roboto";
+}
+.h2333 {
+    font-family: "Roboto";
 }
 
 /* Основной контейнер для всех элементов .recipe-item */  
@@ -77,7 +107,7 @@ body {
     margin: 10px; /* Изменяем отступы для создания сетки */  
     padding: 15px 15px 15px 50px;  
     background-color: #ffffff;  
-    border: 2px solid #3498db;  
+    border: 2px solid var(--color-bluee-);  
     border-radius: 10px;  
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
     width: calc(25% - 20px); /* Задаем ширину, чтобы вмещать 4 элемента в ряд с учетом отступов */  
@@ -95,8 +125,8 @@ body {
     justify-content: center;  
     width: 20px;  
     height: 20px;  
-    background-color: #3498db;  
-    color: #ffffff;  
+    background-color: var(--color-bluee-);  
+    color: var(--color-white-);  
     font-weight: bold;  
     border-radius: 5px;  
     font-size: 0.8rem;  
@@ -107,7 +137,7 @@ body {
     font-size: 1.5rem;  
     color: #2c3e50;  
     margin:010px;  
-    border-bottom: 1px solid #3498db;  
+    border-bottom: 1px solid var(--color-bluee-);  
     padding-bottom: 5px;  
 }  
 
@@ -124,6 +154,7 @@ body {
     width: 30px;  
     height: 30px;  
 }
+
 @media (max-width: 100px) {  
     .square {  
         width: 20px;  
@@ -131,6 +162,7 @@ body {
         font-size: 0.7rem;  
     }  
 }
+
 @media (max-width: 150px) {  
     .square {  
         width: 20px;  
@@ -138,6 +170,7 @@ body {
         font-size: 0.7rem;  
     }  
 }
+
 @media (max-width: 200px) {  
     .square {  
         width: 20px;  
@@ -145,6 +178,7 @@ body {
         font-size: 0.7rem;  
     }  
 }
+
 @media (max-width: 250px) {  
     .square {  
         width: 20px;  
@@ -152,6 +186,7 @@ body {
         font-size: 0.7rem;  
     }  
 }
+
 @media (max-width: 300px) {  
     .square {  
         width: 20px;  
@@ -159,6 +194,7 @@ body {
         font-size: 0.7rem;  
     }  
 }
+
 @media (max-width: 350px) {  
     .square {  
         width: 20px;  
@@ -166,6 +202,7 @@ body {
         font-size: 0.7rem;  
     }  
 }
+
 @media (max-width: 400px) {  
     .square {  
         width: 20px;  
@@ -187,8 +224,8 @@ body {
     position: relative;  
     margin: 13px;  
     padding: 10px 10px 10px 25px;  
-    background-color: #ffffff;  
-    border: 2px solid #3498db;  
+    background-color: var(--color-white-);  
+    border: 2px solid var(--color-bluee-);  
     border-radius: 20px;  
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
     width: calc(25% - 20px);  
@@ -210,5 +247,19 @@ body {
         width: 20px;  
         height: 20px;  
         font-size: 0.7rem;  
-    }  
+    }
+    /* html {background-image: url(./image.kryakva/image.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+    }   */
 }
+
+  a {  
+    text-decoration: none;  
+} 
